@@ -1,0 +1,12 @@
+body {
+  font-family: "DM Sans", sans-serif;
+  margin: 0; }
+
+header .headerWrapper {
+  height: 100px;
+  width: 100vw;
+  max-width: 100%;
+  background: #282B69; }
+
+a {
+  text-decoration: none; }

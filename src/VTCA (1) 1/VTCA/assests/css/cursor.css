@@ -1,0 +1,40 @@
+.box {
+    width: 24px;
+    height: 24px;
+    transform: translate3d(-13px, -13px, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height 200ms ease-in-out, width 200ms ease-in-out;
+    transform-origin: center;
+    position: absolute;
+    pointer-events: none;
+    z-index: 999;
+}
+
+#withDelay {
+    width: 6px;
+    height: 5px;
+    transform: translate3d(-3px, -3px, 0);
+    border-radius: 50%;
+    background-color: #fe4a55;
+    position: absolute;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.p4 {
+    width: 24px;
+    height: 24px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 2px solid #fe4a55;
+}
+
+#part4:hover~#withDelay {
+    display: block;
+}
+
+#part4:hover~#loading>.p4 {
+    display: block;
+}

@@ -1,0 +1,20 @@
+$font: 'DM Sans',
+sans-serif;
+$back: #282B69;
+body {
+    font-family: $font;
+    margin: 0;
+}
+
+header {
+    .headerWrapper {
+        height: 100px;
+        width: 100vw;
+        max-width: 100%;
+        background: $back;
+    }
+}
+
+a {
+    text-decoration: none;
+}
