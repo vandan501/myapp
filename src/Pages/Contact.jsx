@@ -1,5 +1,6 @@
 import React from "react";
 import "../assests/css/custom.css";
+import crosImg from "../assests/image/shape8.svg"
 import { Link } from "react-router-dom";
 import { CiLocationOn } from "react-icons/ci";
 import { FaUniversity } from "react-icons/fa";
@@ -9,6 +10,7 @@ const Contact = () => {
   return (
     <div className="contact-page-container">
       <div className="custom-page-title-section">
+      <img src={crosImg} alt="X" className="cross-icon"/>
         <h1>Contact</h1>
         <div className="back-to-page">
           <Link to="/">Home</Link> / <strong>Contact</strong>
