@@ -289,9 +289,8 @@
 }
 /* end of contact page css */
 
-
 /* event page css */
-.event-page-container{
+.event-page-container {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -304,7 +303,6 @@
   padding: 10px;
   border-radius: 8px;
   margin: 20px 0;
-
 }
 
 .tab {
@@ -318,7 +316,7 @@
 }
 
 .tab.active::after {
-  content: '';
+  content: "";
   display: block;
   height: 2px;
   background-color: red;
@@ -332,12 +330,12 @@
 
 @media (max-width: 768px) {
   .tab-container {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 
   .tab {
-      margin-bottom: 10px;
+    margin-bottom: 10px;
   }
 }
 .event-container {
@@ -347,15 +345,15 @@
   padding: 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
   .event-container {
-      grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 480px) {
   .event-container {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 .event-card {
@@ -373,7 +371,7 @@
 
 .event-image {
   width: 100%;
-  height: 200px;
+  height: 300px;
   object-fit: cover;
 }
 
@@ -394,13 +392,13 @@
   font-weight: bold;
 }
 @media (min-width: 768px) and (max-width: 863px) {
-  .event-date{
+  .event-date {
     position: absolute;
     bottom: 105px;
   }
 }
 @media (min-width: 480px) and (max-width: 584px) {
-  .event-date{
+  .event-date {
     position: absolute;
     bottom: 105px;
     font-size: 16px;
@@ -430,11 +428,9 @@
   font-weight: bold;
   align-items: center;
 }
-.loc-icon{
+.loc-icon {
   fill: #c22b34;
   font-size: 18px;
 }
-
-
 
 /* end of event page css */
