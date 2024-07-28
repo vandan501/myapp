@@ -107,7 +107,7 @@
   height: 210px;
   position: relative;
 }
-.course-price {
+.course-card-price {
   position: absolute;
   width: 100px;
   top: 170px;

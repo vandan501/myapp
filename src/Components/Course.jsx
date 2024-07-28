@@ -10,7 +10,7 @@ function Course() {
         src="https://images.pexels.com/photos/5905706/pexels-photo-5905706.jpeg?auto=compress&cs=tinysrgb&w=400"
         alt="Course-Card"
       />
-      <span className="course-price">Free</span>
+      <span className="course-card-price">Free</span>
     </div>
     <div className="course-card-info">
       <div className="course-card-profile">
