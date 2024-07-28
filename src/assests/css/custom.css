@@ -432,5 +432,287 @@
   fill: #c22b34;
   font-size: 18px;
 }
+.subscribe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background-color: #f8f8f8;
+}
+
+.text-container .subtitle {
+  color: #ff5a5a;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.text-container .title {
+  color: #2c2c54;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.text-container .description {
+  color: #6c6c6c;
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.email-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 1rem;
+}
+
+.subscribe-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #ff5a5a;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.images-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+}
+
+.decor-image {
+  width: 100px;
+  height: auto;
+}
+
+.decor-image-1 {
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  position: absolute;
+  top: -110px;
+  left: -190px;
+  width: 58px;
+}
+
+.decor-image-2 {
+  position: absolute;
+  top: -122px;
+  left: -220px;
+  opacity: 1;
+}
+
+.decor-image-3 {
+  position: absolute;
+  bottom: -50px;
+  right: 0;
+}
+
+@media (max-width: 768px) {
+  .form-container {
+    flex-direction: column;
+  }
+
+  .email-input {
+    border-radius: 5px 5px 0 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .subscribe-button {
+    border-radius: 0 0 5px 5px;
+  }
+
+  .decor-image-1,
+  .decor-image-2,
+  .decor-image-3 {
+    width: 50px;
+  }
+}
 
 /* end of event page css */
+
+/* shop page css */
+.shop-page-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.shop-container {
+  width: 100%;
+  padding: 1rem;
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.results-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  width: 95%;
+  background-color: #fafafa;
+  margin: 20px 0;
+}
+
+.results-info p {
+  margin: 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.sorting-dropdown {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.shop-cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.shop-card {
+  background-color: #fff;
+  width: 100%;
+  height: 585px;
+  position: relative;
+  border: 1px solid #fafafa;
+  border-bottom: 5px solid #c4122f;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.shop-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.sale{
+  width: 50px;
+  font-size: 16px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  height: 50px;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #c4122f;
+}
+
+.shop-card h2 {
+  font-size: 1.25rem;
+  color: #333;
+  margin: 1rem 0;
+}
+
+.shop-card .price {
+  font-size: 1rem;
+  color: #666;
+}
+
+.shop-card .original-price {
+  text-decoration: line-through;
+  margin: 1rem 0.5rem;
+}
+
+.shop-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #c4122f;
+  color: white;
+  border: none;
+  margin: 1rem 0;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media (max-width: 769px) {
+  .shop-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .shop-card {
+    background-color: #fff;
+    width: 300px;
+    height: 585px;
+    position: relative;
+    border: 1px solid #fafafa;
+    border-bottom: 5px solid #c4122f;
+    border-radius: 5px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .shop-cards-container {
+    grid-template-columns: 1fr;
+  }
+  .shop-card {
+    background-color: #fff;
+    width: 300px;
+    height: 585px;
+    position: relative;
+    border: 1px solid #fafafa;
+    border-bottom: 5px solid #c4122f;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .results-info {
+    display: flex;
+    justify-content: space-between;
+    height: 115px;
+    width: 90%;
+    flex-direction: column;
+}
+}
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.pagination-button {
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.pagination-button.active {
+  background-color: #ff5a5a;
+  color: white;
+}
+
+.pagination-button:hover {
+  background-color: #ddd;
+}
+/* end of shop page css */
