@@ -3,6 +3,10 @@ import "../assests/css/custom.css";
 import { Link } from "react-router-dom";
 import { SlLocationPin } from "react-icons/sl";
 import crosImg from "../assests/image/shape8.svg";
+import image1 from '../assests/image/shape4.png';
+import image2 from '../assests/image/circle-border.png';
+// import image3 from './path_to_image3';
+
 const Events = () => {
   const [activeTab, setActiveTab] = useState("ALL");
   return (
@@ -108,6 +112,25 @@ const Events = () => {
           </div>
         </div>
       </div>
+
+      <div className="subscribe-container">
+      <div className="text-container">
+        <p className="subtitle">GO AT YOUR OWN PACE</p>
+        <h1 className="title">Subscribe to Our Newsletter</h1>
+        <p className="description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div className="form-container">
+        <input type="email" placeholder="Enter your email address" className="email-input" />
+        <button className="subscribe-button">Subscribe Now</button>
+      </div>
+      <div className="images-container">
+        <img src={image1} alt="Decoration" className="decor-image decor-image-1" />
+        <img src={image2} alt="Decoration" className="decor-image decor-image-2" />
+        <img src="" alt="Decoration" className="decor-image decor-image-3" />
+      </div>
+    </div>
     </div>
   );
 };
