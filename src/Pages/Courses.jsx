@@ -3,6 +3,7 @@ import "../assests/css/courses.css";
 import { MdArrowForwardIos } from "react-icons/md";
 import { IoIosArrowForward } from "react-icons/io";
 import { FaSearch } from "react-icons/fa";
+import {Link} from "react-router-dom"
 import { BsFillGrid3X3GapFill } from "react-icons/bs";
 
 import { TfiMenuAlt } from "react-icons/tfi";
@@ -37,13 +38,27 @@ const Courses = () => {
         </div>
 
         <div className="course-cards-container">
-         <Course/>
-         <Course/>
-         <Course/>
-         <Course/>
-         <Course/>
-         <Course/>
-         <Course/>
+        <Link to="/about-course">
+           <Course/>
+        </Link>
+        <Link to="/about-course">
+           <Course/>
+        </Link>
+        <Link to="/about-course">
+           <Course/>
+        </Link>
+        <Link to="/about-course">
+           <Course/>
+        </Link>
+        <Link to="/about-course">
+           <Course/>
+        </Link>
+        <Link to="/about-course">
+           <Course/>
+        </Link>
+        <Link to="/about-course">
+           <Course/>
+        </Link>
         </div>
         <div className="pagination-section">
         <p>1</p>
