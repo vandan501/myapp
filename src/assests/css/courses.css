@@ -4,6 +4,7 @@
   flex-direction: column;
   min-height: 100vh;
 }
+
 .page-title {
   margin-top: 20px;
   display: flex;
@@ -11,9 +12,11 @@
   justify-content: center;
   align-items: center;
 }
+
 .page-title .title {
   font-size: 13px;
 }
+
 .courses-page-container .courses-page-header {
   width: 100%;
   display: flex;
@@ -30,10 +33,13 @@
   justify-content: flex-start;
   align-items: center;
 }
+
 .course-page-header-left .courses-page-title {
   font-size: 25px;
+  color: #000;
   text-align: center;
 }
+
 .courses-page-header .course-page-header-right {
   width: min-content;
   height: min-content;
@@ -43,6 +49,7 @@
   margin: 0;
   align-items: center;
 }
+
 .search-bar-div {
   display: flex;
   margin-left: 50px;
@@ -51,6 +58,7 @@
   height: 40px;
   margin-right: 20px;
 }
+
 .search-bar-div .search-bar {
   width: 250px;
   min-width: 250px;
@@ -66,6 +74,7 @@
   font-size: 18px;
   background-color: transparent;
 }
+
 .course-page-header-right .filter-options {
   width: min-content;
   gap: 20px;
@@ -73,9 +82,11 @@
   justify-content: space-around;
   font-size: 25px;
 }
+
 .course-page-header-right .filter-options .filter {
   cursor: pointer;
 }
+
 .course-page-header-right .filter-options .all-filter {
   cursor: pointer;
 }
@@ -101,12 +112,14 @@
   cursor: pointer;
   height: 500px;
 }
+
 .course-card .course-card-image {
   width: 100%;
   border-radius: 13px;
   height: 210px;
   position: relative;
 }
+
 .course-card-price {
   position: absolute;
   width: 100px;
@@ -119,12 +132,14 @@
   font-weight: 900;
   background-color: #e74752;
 }
+
 .course-card .course-card-image img {
   width: 100%;
   height: 100%;
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
 }
+
 .course-card-info {
   width: 100%;
   display: flex;
@@ -133,6 +148,7 @@
   height: 287px;
   flex-direction: column;
 }
+
 .course-card-info .course-card-profile {
   width: 100%;
   display: flex;
@@ -141,11 +157,13 @@
   justify-content: flex-start;
   align-items: center;
 }
+
 .course-card-info .course-card-profile img {
   border-radius: 50%;
   width: 40px;
   height: 40px;
 }
+
 .course-card-info .course-card-profile p {
   width: 100%;
   margin: 0 !important;
@@ -153,10 +171,12 @@
   font-weight: 500;
   padding: 0 !important;
 }
+
 .course-card-info .course-title {
   margin: 0 !important;
   padding: 0 !important;
   display: -webkit-box;
+  color: #000;
   -webkit-line-clamp: 2;
   margin-bottom: 0 !important;
   -webkit-box-orient: vertical;
@@ -166,6 +186,11 @@
   line-height: 1.1;
   font-weight: 600;
 }
+
+.course-card-info .course-title:hover {
+  color: #e74752;
+}
+
 .course-card-info .course-description {
   width: 100%;
   height: min-content;
@@ -175,6 +200,7 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
+
 .course-lessions-students {
   width: 100%;
   height: 40px;
@@ -192,6 +218,7 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .course-lessions-students .course-lessons p {
   margin: 0;
   padding: 0;
@@ -206,23 +233,27 @@
   align-items: center;
   justify-content: flex-start;
 }
+
 .course-lessions-students .course-students p {
   margin: 0;
   padding: 0;
 }
-.pagination-section{
-    width: 100%;
-    display: flex;
-    gap: 20px;
-    height: 60px;
-    justify-content: center;
-    align-items: center;
+
+.pagination-section {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  height: 60px;
+  justify-content: center;
+  align-items: center;
 }
-.pagination-section p{
-    padding: 0;
-    margin: 0;
-    cursor: pointer;
+
+.pagination-section p {
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
 }
+
 /* Responsive adjustments */
 @media (max-width: 1200px) {
   .course-cards-container {
@@ -235,6 +266,7 @@
     grid-template-columns: 2fr repeat();
     gap: 20px;
   }
+
   .course-card {
 
     background-color: #fff;
@@ -243,16 +275,19 @@
     width: 300px;
     height: 500px;
   }
+
   .course-card-info {
     padding: 0 20px;
   }
 }
+
 @media (max-width: 660px) {
 
   .course-cards-container {
     grid-template-columns: 1fr;
-    gap:20px;
+    gap: 20px;
   }
+
   .course-card {
 
     background-color: #fff;
@@ -266,20 +301,23 @@
     margin: auto;
   }
 }
+
 @media (max-width: 500px) {
   .search-bar-div {
     margin: 0px;
   }
+
   .courses-page-header {
     padding: 0 15px;
   }
+
   .filter-options {
     margin-left: 20px;
   }
+
   .course-page-header-right {
     width: 100%;
   }
 }
-@media (max-width:830px) {
-    
-}
+
+@media (max-width:830px) {}
