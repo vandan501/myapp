@@ -5,6 +5,7 @@
   flex-direction: column;
   min-height: 100vh;
 }
+
 .custom-page-title-section {
   background-color: #f8f9f8;
   width: 100%;
@@ -14,33 +15,40 @@
   align-items: center;
   flex-direction: column;
 }
+
 .cross-icon {
   position: absolute;
   left: 20%;
-  top: 40%;
+  top: 24%;
   animation: rotate 10s linear infinite;
   width: 30px;
   height: 30px;
 }
+
 @keyframes rotate {
   0% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(360deg);
   }
 }
+
 .custom-page-title-section h1 {
   font-size: 36px;
   font-weight: bolder;
 }
+
 .back-to-page a:hover {
   color: #c4122f;
 }
+
 .google-map-section {
   width: 100%;
   height: 100vh;
 }
+
 .google-map-section iframe {
   height: 100%;
 }
@@ -54,6 +62,7 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .contact-page-section .left-side,
 .contact-page-section .right-side {
   width: 1/2;
@@ -63,15 +72,18 @@
   display: flex;
   flex-direction: column;
 }
+
 .contact-page-section .left-side {
   padding-left: 60px !important;
   display: flex;
   justify-content: flex-start;
   gap: 20px;
 }
+
 .left-side .heading-section {
   display: flex;
   flex-direction: column;
+
   h3 {
     font-size: 19px !important;
     margin-top: 20px;
@@ -82,6 +94,7 @@
     font-weight: 600;
     color: #c4122f;
   }
+
   h1 {
     color: #0d3862;
     margin: 0;
@@ -90,6 +103,7 @@
     padding: 0;
     font-weight: bolder;
   }
+
   p {
     margin: 0;
     width: 100%;
@@ -99,26 +113,32 @@
     line-height: 1.3;
   }
 }
+
 .left-side .our-address,
 .left-side .uni,
 .left-side .email {
   display: flex;
   gap: 20px;
   width: 100%;
+
   h1 {
     color: #0d3862;
     font-size: 24px;
     font-weight: bolder;
   }
+
   .info {
     width: 100%;
   }
+
   p {
     font-size: 16px !important;
+
     span {
       color: #c4122f;
     }
   }
+
   .icon-section {
     width: 75px;
     height: 85px;
@@ -128,16 +148,19 @@
     align-items: center;
     background-color: #f8f9f8;
   }
+
   .icon-section .myicon {
     font-size: 55px;
     font-weight: 800;
   }
 }
+
 .our-address .info p {
   width: 250px !important;
   min-width: 250px !important;
   max-width: 100% !important;
 }
+
 .left-side .our-address:hover,
 .left-side .uni:hover,
 .left-side .email:hover {
@@ -145,10 +168,12 @@
     background-color: #c4122f;
     fill: #fff;
   }
+
   .myicon {
     fill: #fff;
   }
 }
+
 .contact-page-section .right-side {
   background-image: url("../image/register-shape.jpg");
   min-height: 60vh;
@@ -160,7 +185,8 @@
 }
 
 .contact-form {
-  background-color: #ff6f61; /* Adjust color to match the background */
+  background-color: #ff6f61;
+  /* Adjust color to match the background */
   padding: 30px;
   border-radius: 8px;
   background-image: url("https://learn.ashoka.edu.in/wp-content/uploads/2020/05/register-shape.jpg");
@@ -200,7 +226,8 @@
   padding-left: 15px;
   border-radius: 5px;
   border-radius: 4px;
-  background-color: #ff6f61; /* Adjust color to match the input background */
+  background-color: #ff6f61;
+  /* Adjust color to match the input background */
   color: #fff;
 }
 
@@ -236,7 +263,7 @@
   height: 18px;
 }
 
-.gdpr-term + .wpcf7-list-item-label {
+.gdpr-term+.wpcf7-list-item-label {
   display: inline;
   color: #fff;
 }
@@ -245,34 +272,41 @@
   color: #fff;
   text-decoration: underline;
 }
+
 .form-group label {
   font-size: 16px;
   margin: 0;
   padding: 0;
   color: #fff;
 }
+
 .form-group label a {
   text-decoration: underline;
 }
+
 .contact-form a:hover {
   text-decoration: none;
 }
+
 @media (max-width: 768px) {
   .left-side {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .left-side .heading-section {
     display: flex;
     width: 100%;
     justify-content: center !important;
     align-items: center;
     text-align: center;
+
     h1 {
       font-size: 25px;
     }
   }
+
   .left-side .our-address,
   .left-side .uni,
   .left-side .email {
@@ -282,11 +316,13 @@
     align-items: center;
     text-align: center;
   }
+
   .left-side .our-address .info p {
     text-align: center;
     width: 100% !important;
   }
 }
+
 /* end of contact page css */
 
 /* event page css */
@@ -296,6 +332,7 @@
   justify-content: center;
   flex-direction: column;
 }
+
 .tab-container {
   display: flex;
   justify-content: center;
@@ -319,7 +356,6 @@
   content: "";
   display: block;
   height: 2px;
-  background-color: red;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -338,6 +374,7 @@
     margin-bottom: 10px;
   }
 }
+
 .event-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -356,6 +393,7 @@
     grid-template-columns: 1fr;
   }
 }
+
 .event-card {
   background: #fff;
   border-radius: 8px;
@@ -391,12 +429,14 @@
   margin-bottom: 10px;
   font-weight: bold;
 }
+
 @media (min-width: 768px) and (max-width: 863px) {
   .event-date {
     position: absolute;
     bottom: 105px;
   }
 }
+
 @media (min-width: 480px) and (max-width: 584px) {
   .event-date {
     position: absolute;
@@ -405,6 +445,7 @@
     width: 140px;
   }
 }
+
 .event-title {
   font-size: 18px;
   width: 100%;
@@ -428,10 +469,12 @@
   font-weight: bold;
   align-items: center;
 }
+
 .loc-icon {
   fill: #c22b34;
   font-size: 18px;
 }
+
 .subscribe-container {
   display: flex;
   flex-direction: column;
@@ -524,6 +567,7 @@
   z-index: 1000;
   right: -333px;
 }
+
 .decor-image-4 {
   position: absolute;
   bottom: -40px;
@@ -531,6 +575,7 @@
   right: -300px;
   animation: rotate 10s linear infinite;
 }
+
 @media (max-width: 768px) {
   .form-container {
     flex-direction: column;
@@ -561,6 +606,7 @@
   justify-content: center;
   flex-direction: column;
 }
+
 .shop-container {
   width: 100%;
   padding: 1rem;
@@ -597,6 +643,7 @@
 .shop-cards-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  width: 93%;
   gap: 1rem;
 }
 
@@ -617,6 +664,7 @@
   object-fit: cover;
   border-radius: 5px;
 }
+
 .sale {
   width: 50px;
   font-size: 16px;
@@ -664,6 +712,7 @@
   .shop-cards-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
   .shop-card {
     background-color: #fff;
     width: 300px;
@@ -680,6 +729,7 @@
   .shop-cards-container {
     grid-template-columns: 1fr;
   }
+
   .shop-card {
     background-color: #fff;
     width: 300px;
@@ -690,6 +740,7 @@
     border-radius: 5px;
     text-align: center;
   }
+
   .results-info {
     display: flex;
     justify-content: space-between;
@@ -698,6 +749,7 @@
     flex-direction: column;
   }
 }
+
 .pagination-container {
   display: flex;
   justify-content: center;
@@ -723,32 +775,36 @@
 .pagination-button:hover {
   background-color: #ddd;
 }
+
 /* end of shop page css */
 /* course about page css */
 .course-about-page-container {
   width: 100%;
   display: flex;
-  border: 1px solid red;
-  /* justify-content: center; */
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   flex-direction: column;
   padding: 10px 0;
   min-height: 110vh;
 }
+
 .course-about-page-navigation {
   width: 100%;
   text-align: center;
   font-size: 16px;
 }
+
 .course-about-section {
   width: 100%;
   height: 240px;
   max-height: 240px;
+  flex-wrap: wrap;
   margin-top: 50px;
   display: flex;
   justify-content: flex-start;
   background-color: #442e66;
 }
+
 .course-about-section .course-details {
   width: 70%;
   height: 100%;
@@ -757,6 +813,7 @@
   display: flex;
   flex-direction: column;
 }
+
 .course-about-section .course-details .first-row {
   width: 100%;
   height: 82px;
@@ -764,6 +821,7 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .first-row .instructor-sec {
   width: 140px;
   height: 80%;
@@ -771,21 +829,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   .instructor-image {
     width: 50px;
     height: 50px;
     border-radius: 50%;
   }
+
   .instructor-info {
     display: flex;
     flex-direction: column;
+
     p {
       padding: 0;
       margin: 0;
     }
+
     .instructor-title {
       color: #efe6e69d;
     }
+
     .instructor-name {
       font-weight: 400;
       color: #fff;
@@ -800,28 +863,34 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
   .bookmark-icon {
     font-size: 45px;
     padding: 0;
     margin: 0;
     font-weight: 900;
   }
+
   .category-info {
     display: flex;
     flex-direction: column;
   }
+
   p {
     padding: 0;
     margin: 0;
   }
+
   .category-title {
     color: #efe6e69d;
   }
+
   .category-name {
     font-weight: 400;
     color: #fff;
   }
 }
+
 .first-row .review-sec {
   width: 150px;
   max-width: 150px;
@@ -831,6 +900,7 @@
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-end;
+
   span {
     display: flex;
   }
@@ -838,11 +908,13 @@
   .review-title {
     color: #efe6e69d;
   }
+
   p {
     padding: 0;
     margin: 0;
   }
 }
+
 .course-about-section .course-details .course-display-title {
   width: 100%;
   color: #fff;
@@ -862,11 +934,13 @@
   text-align: center;
   justify-content: flex-start;
   gap: 10px;
+
   .feature-div {
     padding: 0 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 10px;
     color: #fff;
     max-width: 150px;
@@ -876,9 +950,9 @@
 .course-about-section .course-display-card-section {
   width: auto;
   height: 100%;
-  border: 1px solid red;
   position: relative;
 }
+
 .display-course-card {
   width: 300px;
   height: 380px;
@@ -890,11 +964,13 @@
   background-color: #fff;
   flex-direction: column;
 }
+
 .course-image-banner {
   width: 100%;
   height: 190px;
   object-fit: cover;
 }
+
 .display-course-info {
   width: 100%;
   height: auto;
@@ -904,6 +980,7 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .course-display-price {
   font-size: 35px;
   margin: 15px 0 0 0;
@@ -911,6 +988,7 @@
   width: 100%;
   text-align: center;
 }
+
 .display-buy-now {
   width: 90%;
   border: none;
@@ -921,6 +999,7 @@
   font-weight: 600;
   margin-top: 20px;
 }
+
 .course-overview-section {
   width: 100%;
   display: flex;
@@ -948,9 +1027,11 @@
     justify-content: space-between;
     margin-bottom: 20px;
   }
+
   .tabs:last-of-type {
     border-right: 1px solid rgb(206, 197, 197);
   }
+
   .tabs {
     padding: 10px 20px;
     border: none;
@@ -962,6 +1043,7 @@
     background-color: #f1f2f8;
     cursor: pointer;
   }
+
   .tabs.active {
     color: #f1b516 !important;
     border-top: 3px solid #f1b516;
@@ -971,6 +1053,11 @@
     flex: 1;
     width: 70%;
     margin-left: 60px;
+
+    h2,
+    p {
+      color: #000;
+    }
   }
 
   /* Responsive Design */
@@ -985,17 +1072,99 @@
     }
   }
 }
-.comment-form-container {
+
+/* Comment.css */
+.comment-section {
+  font-family: Arial, sans-serif;
+  width: auto;
+  margin-left: 60px;
+  padding-left: 90px;
+}
+
+.comment-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  max-width: 70%;
+  color: #000;
+  border-bottom: 0.2px solid #dcdcdc;
+  margin-bottom: 1rem;
+}
+
+.comment-section .comment {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.comment-section .comment-avatar {
+  margin-right: 1rem;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.comment-section .comment-avatar img {
   width: 100%;
-  border: 1px solid black;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.comment-section .comment-body {
+  flex: 1;
+}
+
+.comment-section .comment-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+.comment-section .comment-author {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.comment-section .comment-date {
+  font-size: 0.85rem;
+  color: gray;
+}
+
+.comment-section .comment-content {
+  margin-bottom: 0.5rem;
+}
+
+.comment-section .comment-reply {
+  border: 1px solid #000;
+  padding: 0.5rem;
+  width: 67px;
+  height: auto;
+  font-size: 0.85rem;
+  background-color: #F1F1F1;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.comment-form-container {
+  width: auto;
   margin: 0 auto;
-  padding: 20px;
+  margin-left: 60px;
   padding-left: 60px;
+  margin-bottom: 50px;
+
 }
 
 .comment-form-title {
   width: 100%;
   margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 20px 0;
+  max-width: 70%;
+  color: #000;
+  border-bottom: 0.2px solid #dcdcdc;
+  margin-bottom: 1rem;
 }
 
 .comment-form {
@@ -1008,6 +1177,7 @@
 .comment-form label {
   margin-bottom: 5px;
 }
+
 .comment-form .cmt-text-area,
 .comment-form .website-input {
   width: 100%;
@@ -1024,17 +1194,20 @@
   align-items: center;
   gap: 10px;
   margin-bottom: 10px;
+
   .save-check-mark {
     width: min-content;
     margin: 0;
     padding: 0;
     font-size: 16px;
   }
+
   lable {
     margin: 0;
     padding: 0;
   }
 }
+
 .comment-form input {
   width: 370px;
   /* max-width: 760px; */
@@ -1043,16 +1216,19 @@
   margin-bottom: 10px;
   border: 1px solid #ccc;
 }
+
 .name-email {
   width: 100%;
   display: flex;
   gap: 5px;
   justify-content: space-between;
   align-items: center;
+
   .comment-form input {
     width: 300px !important;
   }
 }
+
 .comment-form button {
   background-color: #e74752;
   color: #fff;
@@ -1066,12 +1242,244 @@
   cursor: pointer;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
-  /* Adjust form layout and element sizes for smaller screens */
   .comment-form-container {
     max-width: 100%;
     padding: 10px;
   }
 }
+
+@media (max-width:1190px) {
+  .course-overview .nav-tabs {
+    width: 60%;
+    min-width: auto;
+  }
+
+  .course-overview .nav-tabs .tabs {
+    width: 25%;
+    padding: 0;
+    min-width: auto;
+  }
+
+}
+
+@media (max-width:1110px) {
+  .course-about-section {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: auto;
+    min-height: auto;
+    flex-direction: column;
+  }
+
+  .course-about-section .course-display-card-section {
+    width: auto;
+  }
+
+  .display-course-card {
+    position: relative;
+    top: 30px;
+    left: 0;
+  }
+
+  .comment-section .comment {
+    width: 90%;
+  }
+}
+
+@media (max-width:992px) {
+  .course-about-section {
+    display: block !important;
+    flex-direction: column !important;
+    position: relative;
+    flex-wrap: wrap !important;
+    height: min-content !important;
+    min-height: auto !important;
+    max-height: min-content !important;
+    position: relative;
+
+    .course-details {
+      width: 100%;
+    }
+
+    .course-details .course-display-title {
+      width: 100% !important;
+    }
+  }
+
+  .display-course-card {
+    position: absolute !important;
+  }
+
+  .comment-form-container {
+    max-width: 100%;
+    padding: 0px;
+
+    span {
+      width: 100%;
+    }
+
+    .name-email {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+
+    .comment-form input {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+  }
+
+  .checkbox-container input#save-info {
+    width: 20px !important;
+  }
+
+  .course-overview {
+    .nav-tabs {
+      margin: 0 !important;
+      display: flex;
+      width: 90%;
+      flex-direction: row;
+    }
+
+  }
+
+  .course-display-card-section {
+    width: 100%;
+    display: flex !important;
+    min-height: 400px;
+    height: auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+    .display-course-card {
+      margin: auto !important;
+      position: unset !important;
+      width: auto;
+      margin: auto 0 !important;
+      align-self: center;
+    }
+  }
+
+  .course-details {
+    /* margin-left:0px !important;    */
+    padding-left: 40px !important;
+  }
+}
+
+
+
+@media (max-width:630px) {
+  .course-details .first-row {
+    display: flex;
+    justify-content: flex-start !important;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center !important;
+    height: auto !important;
+
+    div {
+      width: auto;
+      /* border:solid white; */
+      margin: 0;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width:524px) {
+  .course-details .first-row {
+    margin-bottom: 20px;
+  }
+
+  p,
+  span {
+    font-size: 14px;
+  }
+
+  .course-display-title {
+    font-size: 20px !important;
+  }
+
+  .course-display-features {
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    div {
+      padding: 0 !important;
+    }
+  }
+
+  .display-course-card {
+    margin-top: 70px !important;
+  }
+}
+
+
+@media (max-width:340px) {
+  .course-details {
+    padding-top: 20px;
+    padding-left: 10px !important;
+  }
+}
+
+@media (max-width:426px) {
+  .course-overview {
+    .course-content {
+      margin-left: 0px !important;
+      width: 100%;
+
+      h2 {
+        font-size: 20px;
+      }
+
+      p {
+        width: 100%;
+      }
+    }
+  }
+
+  .comment-section {
+    margin-left: 0;
+    padding-left: 20px;
+
+    h2 {
+      font-size: 25px;
+    }
+  }
+
+  .comment-form-container {
+    margin-left: 30px !important;
+
+    h2 {
+      font-size: 25px;
+    }
+  }
+}
+
+
+@media (max-width:426px) {
+  .nav-tabs {
+      display:flex !important;
+      flex-wrap:wrap;
+      height:80px !important;
+      .tabs{
+          min-width:50% !important;
+          
+      }
+  }
+}
+
+
+
+
 /* end of course about page css */

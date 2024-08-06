@@ -10,6 +10,7 @@ import { GiNetworkBars } from "react-icons/gi";
 import { FaStar } from "react-icons/fa";
 import { FaStarHalfAlt } from "react-icons/fa";
 import { FaRegStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const CourseAbout = () => {
   const [activeTab, setActiveTab] = useState("Overview");
   const [commentText, setCommentText] = useState("");
@@ -24,7 +25,7 @@ const CourseAbout = () => {
   return (
     <section className="course-about-page-container">
       <div className="course-about-page-navigation">
-        Home <MdArrowForwardIos /> Courses <MdArrowForwardIos /> Course Category{" "}
+      <Link to="/"> Home </Link><MdArrowForwardIos /> <Link to="/courses">Courses</Link> <MdArrowForwardIos /> Course Category{" "}
         <MdArrowForwardIos /> Course Name
       </div>
 
@@ -43,7 +44,7 @@ const CourseAbout = () => {
               </span>
             </div>
             <div className="category-sec">
-              <CiBookmark fill="yellow" className="bookmark-icon" />
+              <CiBookmark fill="#f1b516" className="bookmark-icon" />
               <span className="category-info">
                 <p className="category-title">Category</p>
                 <p className="category-name">UI UX | Development</p>
@@ -51,34 +52,36 @@ const CourseAbout = () => {
             </div>
             <div className="review-sec">
               <span>
-                <FaStar fill="yellow" />
-                <FaStar fill="yellow" />
-                <FaStar fill="yellow" />
-                <FaStarHalfAlt fill="yellow" />
-                <FaRegStar fill="yellow" />
+                <FaStar fill="#f1b516" />
+                <FaStar fill="#f1b516" />
+                <FaStar fill="#f1b516" />
+                <FaStarHalfAlt fill="#f1b516" />
+                <FaRegStar fill="#f1b516" />
               </span>
               <p className="review-title">Review</p>
             </div>
           </div>
+          <Link to="course-about">
           <h2 className="course-display-title">
             Deep Learning a-z™: Hands-on Artificial Neural Networks
           </h2>
+          </Link>
           <div className="course-display-features">
             <div className="feature-div">
-              <MdOutlineAccessTimeFilled fill="yellow" />1 Week
+              <MdOutlineAccessTimeFilled fill="#f1b516" />1 Week
             </div>
             <div className="feature-div">
-              <GiNetworkBars fill="yellow" />
+              <GiNetworkBars fill="#f1b516" />
               All LEvels
             </div>
             <div className="feature-div">
-              <FaCopy fill="yellow" />0 Lesson
+              <FaCopy fill="#f1b516" />0 Lesson
             </div>
             <div className="feature-div">
-              <FaPuzzlePiece fill="yellow" />0 Quiz
+              <FaPuzzlePiece fill="#f1b516" />0 Quiz
             </div>
             <div className="feature-div">
-              <PiStudentFill fill="yellow" />9 Students
+              <PiStudentFill fill="#f1b516" />9 Students
             </div>
           </div>
         </div>
@@ -180,6 +183,24 @@ const CourseAbout = () => {
         </div>
       </div>
 
+      <div className="comment-section">
+      <h2>1 Comment</h2>
+      <div className="comment">
+        <div className="comment-avatar">
+          <img src={instructoricon} alt="User Avatar" />
+        </div>
+        <div className="comment-body">
+          <div className="comment-header">
+            <span className="comment-author">Jone Smit</span>
+            <span className="comment-date">May 8, 2020 at 5:18 PM</span>
+          </div>
+          <div className="comment-content">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy.
+          </div>
+          <button className="comment-reply">Reply</button>
+        </div>
+      </div>
+    </div>
       <div className="comment-form-container">
         <h2 className="comment-form-title">Leave a Reply</h2>
 
