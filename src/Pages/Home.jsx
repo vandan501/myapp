@@ -1,5 +1,14 @@
 import React from 'react';
+import  { useEffect } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import $ from 'jquery';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import 'owl.carousel';
 
+// import Odometer from 'odometer';
+import 'odometer/themes/odometer-theme-default.css';
 import courseImage from "../assests/image/course-image1.jpg";
 import avatar from "../assests/image/avatar.png";
 import agenda from "../assests/image/agenda.png"
@@ -34,14 +43,16 @@ import shape6 from "../assests/image/shape6.png";
 import shape7 from "../assests/image/shape7.png";
 import shape8 from "../assests/image/shape8.png";
 import shape9 from "../assests/image/shape9.png";
+
+import OwlCarousel from 'react-owl-carousel';
 import man from "../assests/image/man.jpg"
 import quotation from "../assests/image/quotation.png"
 import courseImage1 from "../assests/image/course-image1.jpg";
 import videoImg1 from "../assests/image/video-img1.jpg";
 // import user from "../assests/image/user.png"
 import user1 from "../assests/image/user1.jpg"
-import user2 from "../assests/image/user2.jpg"
-import user3 from "../assests/image/user3.jpg"
+// import user2 from "../assests/image/user2.jpg"
+// import user3 from "../assests/image/user3.jpg"
 import blogPostImg2 from "../assests/image/blog-post-img2-750x500.jpg";
 import calendar from "../assests/image/calendar.png";
 import secondBlog from "../assests/image/second-blog.jpg";
@@ -51,9 +62,18 @@ import agenda1 from "../assests/image/agenda-1.png";
 import manWithLaptop from "../assests/image/man-with-laptop.png";
 
 const Home = () => {
+  useEffect(() => {
+  
+  
+    setTimeout(() => {
+      $("#number1").text("1,926");
+      $("#number2").text("3,279");
+      $("#number3").text("25");
+      $("#number4").text("100");
+    }, 100);
+  }, []);
     return (
-        <>
- <div className="headerWrapper" />
+       <>
   <div className="bodyWrapper">
     <div className="main-banner">
       <div className="container-fluid">
@@ -406,7 +426,7 @@ const Home = () => {
       <div className="partner-area pt-100">
         <div className="section-title">
           <span className="sub-title">Learn At Your Own Pace</span>
-          <h2>KPIT Popular Courses </h2>
+          <h2>Learniphi Popular Courses </h2>
           <p>
             Explore all of our courses and pick your suitable ones to enroll and
             start learning with us! We ensure that you will never regret it!
@@ -575,10 +595,45 @@ const Home = () => {
                     Our teaching also means, if you travel often or need to
                     relocate, you can continue to study wherever you go.
                   </p>
-                  <div className="feedback-slides">
-                    <div className="single-feedback-item">
+                  <OwlCarousel
+      className="feedback-slides"
+      loop
+      items={1}
+      autoplay
+      nav={false}
+      dots
+      animateOut="fadeOut"
+    >
+      <div className="single-feedback-item">
+                          <p>
+                            Lorem 1 ipsum dolor sit amet, consectetur adipiscing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore
+                            magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                            Risus commodo viverra maecenas accumsan lacus vel
+                            facilisis. Lorem ipsum dolor sit amet, consectetur
+                            adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore.
+                          </p>
+                          <div className="client-info d-flex align-items-center">
+                            <img
+                              className="shadow rounded-circle"
+                              src={user1}
+                              alt="David Warner"
+                            />
+                            <div className="title">
+                              <h3>David Warner</h3>
+                              <span>QA Developer</span>
+                            </div>
+                          </div>
+                          <img
+                            className="quotes"
+                            src={quotation}
+                            alt=""
+                          />
+      </div>
+     <div className="single-feedback-item">
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        Lorem 2 ipsum dolor sit amet, consectetur adipiscing elit,
                         sed do eiusmod tempor incididunt ut labore et dolore
                         magna aliqua. Quis ipsum suspendisse ultrices gravida.
                         Risus commodo viverra maecenas accumsan lacus vel
@@ -602,7 +657,39 @@ const Home = () => {
                         src={quotation}
                         alt=""
                       />
-                    </div>
+      </div>
+     <div className="single-feedback-item">
+                      <p>
+                        Lorem 3 ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore
+                        magna aliqua. Quis ipsum suspendisse ultrices gravida.
+                        Risus commodo viverra maecenas accumsan lacus vel
+                        facilisis. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore.
+                      </p>
+                      <div className="client-info d-flex align-items-center">
+                        <img
+                          className="shadow rounded-circle"
+                          src={user1}
+                          alt="David Warner"
+                        />
+                        <div className="title">
+                          <h3>David Warner</h3>
+                          <span>QA Developer</span>
+                        </div>
+                      </div>
+                      <img
+                        className="quotes"
+                        src={quotation}
+                        alt=""
+                      />
+      </div>
+                   
+    </OwlCarousel>
+                  <div className="feedback-slides">
+                  
+                    
                   </div>
                   <div className="feedback-info">
                     <p>
@@ -620,25 +707,25 @@ const Home = () => {
                   <div className="row">
                     <div className="col-lg-6 col-md-6 col-sm-6 ">
                       <div className="single-funfacts-box">
-                        <h3 className="odometer" id="numebr1"></h3>
+                        <h3 className="odometer" id="number1"></h3>
                         <p>Finished Sessions</p>
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-6 ">
                       <div className="single-funfacts-box">
-                        <h3 className="odometer" id="numebr"></h3>
+                        <h3 className="odometer" id="number2"></h3>
                         <p>Enrolled Learners</p>
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-6 ">
                       <div className="single-funfacts-box">
-                        <h3 className="odometer" id="numebr2"></h3>
+                        <h3 className="odometer" id="number3"></h3>
                         <p>Online Instructors</p>
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-6 ">
                       <div className="single-funfacts-box">
-                        <h3 className="odometer" id="numebr3"></h3>
+                        <h3 className="odometer" id="number4"></h3>
                         <p>Satisfaction Rate</p>
                       </div>
                     </div>
@@ -686,7 +773,7 @@ const Home = () => {
                 </span>
                 <h2>Self Development Course</h2>
                 <p>
-                  KPIT Self Development Course can assist you in bringing the
+                  Learniphi Self Development Course can assist you in bringing the
                   significant changes in personal understanding and reshaping
                   the confidence to achieve the best from your career! We trust
                   that learning should be enjoyable, and only that can make
@@ -858,7 +945,7 @@ const Home = () => {
               <span className="sub-title">Distant Learning</span>
               <h2>Feel Like You Are Attending Your Classes Physically!</h2>
               <p>
-                KPIT training programs can bring you a super exciting experience
+                Learniphi training programs can bring you a super exciting experience
                 of learning through online! You never face any negative
                 experience while enjoying your classes virtually by sitting in
                 your comfort zone. Our flexible learning initiatives will help

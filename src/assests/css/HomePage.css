@@ -1077,7 +1077,7 @@ a {
               animation: moveleftbounce 4s linear infinite; }
           .bodyWrapper .main-banner .container-fluid .row .col-lg-6 .main-banner-courses-list .banner-shape2 {
             position: absolute;
-            left: -85px;
+            left: 7px;
             top: 17px;
             z-index: -1;
             right: 0;
@@ -1086,14 +1086,14 @@ a {
               animation: movebounce 5s linear infinite; }
           .bodyWrapper .main-banner .container-fluid .row .col-lg-6 .main-banner-courses-list .banner-shape3 {
             position: absolute;
-            left: -40px;
+            left: 0px;
             top: -35px;
             z-index: -2;
             right: 0;
             text-align: center; }
             .bodyWrapper .main-banner .container-fluid .row .col-lg-6 .main-banner-courses-list .banner-shape3 img {
               animation-name: rotateme;
-              animation-duration: 50s;
+              animation-duration: 30s;
               animation-iteration-count: infinite;
               animation-timing-function: linear; }
 
@@ -1248,16 +1248,17 @@ a {
       margin-top: 30px; }
   .bodyWrapper .about-area .shape1 {
     position: absolute;
-    left: 12%;
+    left: 5%;
     top: 11%;
     z-index: -1; }
     .bodyWrapper .about-area .shape1 img {
       animation: moveleftbounce 4s linear infinite; }
   .bodyWrapper .about-area .shape2 {
     position: absolute;
-    left: 5%;
-    bottom: -10%;
-    z-index: -1; }
+    left: -2%;
+    bottom: -8%;
+    z-index: -1;
+    transform: rotate(-8deg); }
     .bodyWrapper .about-area .shape2 img {
       animation: movebounce 5s linear infinite; }
   .bodyWrapper .about-area .shape3 {
@@ -1272,7 +1273,7 @@ a {
       animation-timing-function: linear; }
   .bodyWrapper .about-area .shape4 {
     position: absolute;
-    right: 5%;
+    right: 2%;
     bottom: 20%;
     z-index: -1; }
     .bodyWrapper .about-area .shape4 img {

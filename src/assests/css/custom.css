@@ -1469,13 +1469,14 @@
 
 @media (max-width:426px) {
   .nav-tabs {
-      display:flex !important;
-      flex-wrap:wrap;
-      height:80px !important;
-      .tabs{
-          min-width:50% !important;
-          
-      }
+    display: flex !important;
+    flex-wrap: wrap;
+    height: 80px !important;
+
+    .tabs {
+      min-width: 50% !important;
+
+    }
   }
 }
 
@@ -1483,3 +1484,19 @@
 
 
 /* end of course about page css */
+
+@page {
+  size: landscape;
+}
+
+
+
+.partner-logo img {
+  width: 80px !important;
+  position: relative;
+  top: -10px !important;
+  left: 10px !important;
+  border-radius: 50%;
+  z-index: 10000;
+  height: 80px !important;
+}
