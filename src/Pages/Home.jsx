@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import  { useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
@@ -6,9 +6,8 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'owl.carousel';
-
-// import Odometer from 'odometer';
-import 'odometer/themes/odometer-theme-default.css';
+import Odometer from 'odometer';
+import '../assests/css/odometer-theme-default.css';
 import courseImage from "../assests/image/course-image1.jpg";
 import avatar from "../assests/image/avatar.png";
 import agenda from "../assests/image/agenda.png"
@@ -43,6 +42,7 @@ import shape6 from "../assests/image/shape6.png";
 import shape7 from "../assests/image/shape7.png";
 import shape8 from "../assests/image/shape8.png";
 import shape9 from "../assests/image/shape9.png";
+import { FaPlay } from "react-icons/fa6";
 
 import OwlCarousel from 'react-owl-carousel';
 import man from "../assests/image/man.jpg"
@@ -62,15 +62,43 @@ import agenda1 from "../assests/image/agenda-1.png";
 import manWithLaptop from "../assests/image/man-with-laptop.png";
 
 const Home = () => {
+
+  const number1Ref = useRef(null);
+  const number2Ref = useRef(null);
+  const number3Ref = useRef(null);
+  const number4Ref = useRef(null);
+
+
+
   useEffect(() => {
-  
-  
-    setTimeout(() => {
-      $("#number1").text("1,926");
-      $("#number2").text("3,279");
-      $("#number3").text("25");
-      $("#number4").text("100");
-    }, 100);
+ 
+    // Initialize odometers
+  const odometers = [
+    new Odometer({ el: number1Ref.current, value: 0 }),
+    new Odometer({ el: number2Ref.current, value: 0 }),
+    new Odometer({ el: number3Ref.current, value: 0 }),
+    new Odometer({ el: number4Ref.current, value: 0 }),
+  ];
+
+  // Inject values using jQuery
+  $('#number1').text(250);
+  $('#number2').text(1200);
+  $('#number3').text(75);
+  $('#number4').text(98);
+
+  // Trigger the odometer animation with a delay
+  setTimeout(() => {
+    $('#number1').text(500);
+    $('#number2').text(1500);
+    $('#number3').text(100);
+    $('#number4').text(99);
+  }, 1000);
+  return () => {
+    odometers.forEach((odometer) => {
+      odometer.el.innerHTML = 0;
+    });
+  };
+   
   }, []);
     return (
        <>
@@ -707,25 +735,25 @@ const Home = () => {
                   <div className="row">
                     <div className="col-lg-6 col-md-6 col-sm-6 ">
                       <div className="single-funfacts-box">
-                        <h3 className="odometer" id="number1"></h3>
+                        <h3 className="odometer" id="number1" ref={number1Ref}></h3>
                         <p>Finished Sessions</p>
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-6 ">
                       <div className="single-funfacts-box">
-                        <h3 className="odometer" id="number2"></h3>
+                        <h3 className="odometer" id="number2" ref={number2Ref}></h3>
                         <p>Enrolled Learners</p>
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-6 ">
                       <div className="single-funfacts-box">
-                        <h3 className="odometer" id="number3"></h3>
+                        <h3 className="odometer" id="number3" ref={number3Ref}></h3>
                         <p>Online Instructors</p>
                       </div>
                     </div>
                     <div className="col-lg-6 col-md-6 col-sm-6 ">
                       <div className="single-funfacts-box">
-                        <h3 className="odometer" id="number4"></h3>
+                        <h3 className="odometer" id="number4" ref={number4Ref}></h3>
                         <p>Satisfaction Rate</p>
                       </div>
                     </div>
@@ -740,7 +768,7 @@ const Home = () => {
                 <img src={videoImg1} alt="" />
               </div>
               <a href="#" className="video-btn">
-                <i className="fas fa-play" />
+              <FaPlay fill='#fff' color='#fff' className='video-play-icon' />
               </a>
               <div className="shape1">
                 <img src={shape9} alt="" />
