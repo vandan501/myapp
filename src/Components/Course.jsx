@@ -32,7 +32,7 @@ function Course() {
         <div className="course-lessions-students">
           <div className="course-lessons">
             <LiaBookSolid fontSize={20} fill={"#e74752"} />
-            <p>2 Students</p>
+            <p>2 Lessons</p>
           </div>
           <div className="course-students">
             <PiUsersThreeThin fontSize={20} fill={"#e74752"} />

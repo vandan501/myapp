@@ -1,6 +1,12 @@
 import React from 'react';
-import whitelogo from "../assests/image/white_logo.png"
+import { FaInstagram, FaTwitter } from "react-icons/fa";
+import { GrLinkedinOption } from "react-icons/gr";
+import { FaFacebookF } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import { MdOutlineWifiCalling3 } from "react-icons/md";
+import { CiLocationOn } from "react-icons/ci";
+import { CiMail } from "react-icons/ci";
+import { BiSolidInbox } from "react-icons/bi";
 const Footer = () => {
     return (
         <>
@@ -17,50 +23,34 @@ const Footer = () => {
         <div className="col-lg-4 col-md-4 col-sm-12">
           <div className="single-footer-widget">
             <Link  to="#" className="logo">
-              <img
-                src={whitelogo}
-                style={{ maxWidth: "100%", height: "auto", width: 190 }}
-              />
+             <h2>Learniphi</h2>
             </Link>
             <p>
-              Plot No. 2, Rajiv Gandhi Education City, National Capital Region
-              P.O. Rai, Sonepat Haryana-131029 (India)
+              Working to bring significant changes in online-based learning by doing extensive research for course curriculum prepration,student engagements,and looking forward to the flexible education!
             </p>
             <ul className="social-link">
               <li>
                 <Link  to="#" className="logo d-block">
                   {" "}
-                  <i className="fab fa-twitter" />
+              <FaTwitter/>
+
                 </Link>
               </li>
               <li>
                 <Link  to="#" className="logo d-block">
-                  <i className="fab fa-facebook-f" />
-                </Link>
-              </li>
-              <li>
-                <Link  to="#" className="logo d-block">
-                  {" "}
-                  <i className="fab fa-instagram" />
+                    <FaFacebookF/>
                 </Link>
               </li>
               <li>
                 <Link  to="#" className="logo d-block">
                   {" "}
-                  <i className="fab fa-linkedin-in" />
+                  <FaInstagram/>
                 </Link>
               </li>
               <li>
                 <Link  to="#" className="logo d-block">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                    {/* Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) */}
-                    <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
-                  </svg>
-                </Link>
-              </li>
-              <li>
-                <Link  to="#" className="logo d-block">
-                  <i className="fas fa-university" />
+                  {" "}
+                  <GrLinkedinOption />
                 </Link>
               </li>
             </ul>
@@ -71,32 +61,44 @@ const Footer = () => {
           <div className="menu-footer-resources-container">
             <ul id="menu-footer-resources" className="menu">
               <li>
-                <Link  to="#">Log In</Link>
+                <Link  to="#">Become A Teacher</Link>
+              </li>
+              <li>
+                <Link  to="#">Instructor/Student Profile</Link>
+              </li>
+              <li>
+                <Link  to="/courses">Courses</Link>
+              </li>
+              <li>
+                <Link  to="#">LP Checkout</Link>
               </li>
               <li>
                 <Link  to="#">Terms &amp; Conditions</Link>
               </li>
-              <li>
-                <Link  to="#">Privacy Policy</Link>
-              </li>
+
             </ul>
           </div>
         </div>
         <div className="single-footer-widget col-lg-4 col-md-4 col-sm-12 widget_nav_menu">
+
           <h3>Explore</h3>
           <div className="menu-footer-resources-container">
             <ul id="menu-footer-resources" className="menu">
               <li>
-                <Link  to="#">Home</Link>
+                <Link  to="/">Home</Link>
               </li>
               <li>
-                <Link  to="#">Courses</Link>
+                <Link  to="#">Blog</Link>
               </li>
               <li>
-                <Link  to="#">About Us</Link>
+                <Link  to="#">Privacy Policy</Link>
               </li>
               <li>
-                <Link  to="#">Contact</Link>
+                <Link  to="#">Become A Teacher</Link>
+              </li>
+
+              <li>
+                <Link  to="/courses">Courses</Link>
               </li>
             </ul>
           </div>
@@ -105,32 +107,32 @@ const Footer = () => {
           <h3>Address</h3>
           <ul className="footer-contact-info">
             <li>
-              <i className="fas fa-map-marker-alt" />
+            <CiLocationOn  fill='#fff'  className='add-icons'/>
               <Link  to="#" target="_blank">
-                2750 Quadra Street Victoria Road, New York, Canada
+               B-810-811,Empire Business Hub,Science City Road,Ahmedabad -380060,Gujarat,India 
               </Link>
             </li>
             <li>
-              <i className="fas fa-phone-alt" />
-              <Link  to="tel:+1-485-456-0102">+1-485-456-0102</Link>
+            <MdOutlineWifiCalling3 fill='#fff' className='add-icons' />
+              <Link  to="tel:+91-79-4849-6969">+91-79-4849-6969</Link>
             </li>
             <li>
-              <i className="fas fa-envelope" />
-              <Link  to="mailto:hello@ecademy.com">hello@ecademy.com</Link>
+            <CiMail fill='#fff' className='add-icons'/>
+              <Link  to="mailto:hello@ecademy.com">hello@learniphi.com</Link>
             </li>
             <li>
-              <i className="fas fa-inbox" />
-              <Link  to="tel:+1-485-456-0102">+1-485-456-0102</Link>
+              <BiSolidInbox fill='#fff' className='add-icons'/>
+              <Link  to="tel:+91-79-4849-6969">+91-79-4849-6969</Link>
             </li>
           </ul>
         </div>
       </div>
       <div className="footer-bottom-area">
-        <div className="row align-items-center">
-          <div className="col-lg-12 col-md-12 col-sm-12 col-12 text-center">
-            <p>Copyright ©️ 2022 All Right Reserved by Ashoka university</p>
+        <div className="row align-items-center" id='footer-last-row'>
+          <div className="col-lg-12 col-md-12 col-sm-12 col-12 text-center" >
+            <p>©️2021 Learniphi is Proudly Crafted by <strong><span className='learniphi-footer-name'>Learniphi</span></strong></p>
           </div>
-          <div className="col-lg-6 col-md-6 d-none">
+          <div className="col-lg-6 col-md-6">
             <ul id="menu-footer-menu" className="menu">
               <li
                 id="menu-item-26"

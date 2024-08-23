@@ -6,10 +6,11 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'owl.carousel';
+import { FaRegUser } from "react-icons/fa";
 import Odometer from 'odometer';
 import '../assests/css/odometer-theme-default.css';
 import courseImage from "../assests/image/course-image1.jpg";
-import avatar from "../assests/image/avatar.png";
+import avatar from "../assests/image/avatar.jpg";
 import agenda from "../assests/image/agenda.png"
 import group from "../assests/image/group.png"
 import bannerShape1 from "../assests/image/banner-shape1.png";
@@ -111,11 +112,11 @@ const Home = () => {
               <h1>The World's Leading Distance Learning Provider</h1>
               <p>
                 Flexible easy to access learning opportunities can bring a
-                significant change in how individuals prefer to learn! The KPIT
+                significant change in how individuals prefer to learn! The eCademy
                 can offer you to enjoy the beauty of eLearning!
               </p>
               <a href="#" className="default-btn">
-                <i className="fas fa-user" /> Join For Free{" "}
+                <FaRegUser fill='#fff'/> Join For Free{" "}
                 <span
                   className="effect"
                   style={{ top: "46.5px", left: "101.172px" }}
@@ -149,7 +150,7 @@ const Home = () => {
                       <h3>
                         <a href="#">
                           Node.js for Beginners: Go From Zero to Hero with
-                          Node.js | KPIT
+                          Node.js | eCademy
                         </a>
                       </h3>
                       <p />
@@ -195,7 +196,7 @@ const Home = () => {
                       <h3>
                         <a href="#">
                           Node.js for Beginners: Go From Zero to Hero with
-                          Node.js | KPIT
+                          Node.js | eCademy
                         </a>
                       </h3>
                       <p />
@@ -427,7 +428,7 @@ const Home = () => {
                 </li>
               </ul>
               <a href="#" className="default-btn">
-                <i className="fas fa-user" /> View All Courses
+                <FaRegUser fill='#fff'/> View All Courses
                 <span
                   className="effect"
                   style={{ top: "46.5px", left: "101.172px" }}
@@ -570,7 +571,7 @@ const Home = () => {
                 <h3>
                   <a href="#">
                     Node.js for Beginners: Go From Zero to Hero with Node.js |
-                    KPIT
+                    eCademy
                   </a>
                 </h3>
                 <p />
@@ -617,7 +618,7 @@ const Home = () => {
                     Flexible Study at Your Own Pace, According to Your Own Needs
                   </h2>
                   <p>
-                    With the KPIT, you can study whenever and wherever you
+                    With the eCademy, you can study whenever and wherever you
                     choose. We have students in over 175 countries and a global
                     reputation as a pioneer in the field of flexible learning.
                     Our teaching also means, if you travel often or need to
@@ -801,14 +802,15 @@ const Home = () => {
                 </span>
                 <h2>Self Development Course</h2>
                 <p>
-                  Learniphi Self Development Course can assist you in bringing the
+                  eCademy Self Development Course can assist you in bringing the
                   significant changes in personal understanding and reshaping
                   the confidence to achieve the best from your career! We trust
                   that learning should be enjoyable, and only that can make
                   substantial changes to someone!
                 </p>
                 <a href="#" className="link default-btn">
-                  <i className="fas fa-user" /> Start For Free
+                <FaRegUser fill='#fff'/> 
+                   Start For Free
                   <span
                     className="effect"
                     style={{ top: "46.5px", left: "101.172px" }}
@@ -1043,9 +1045,7 @@ const Home = () => {
     </div>
   </div>
   <div className="footerWrapper" />
-  <div className="go-top top">
-    <i className="fas fa-chevron-up" />
-  </div>
+
 </>
 
     );

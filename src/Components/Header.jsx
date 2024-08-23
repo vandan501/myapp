@@ -1,9 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import shoppingcart from "../assests/image/shopping-cart.png";
 import magnifier from "../assests/image/magnifier.png";
-
+import white_logo from "../assests/image/white_logo.png"
+import { FaRegUser } from "react-icons/fa";
+import { IoIosArrowDown } from "react-icons/io";
 const Header = () => {
+
+      const [isMenuVisible, setIsMenuVisible] = useState(false);    
+      const [isMenu2Visible, setIsMenu2Visible] = useState(false);    
+      const toggleMenu = () => {
+        setIsMenuVisible(!isMenuVisible);
+    };
+    const toggleMenu2 = () => {
+      setIsMenu2Visible(!isMenu2Visible);
+  };
+
     return (
         <>
         <div className="headerWrapper">
@@ -16,6 +28,7 @@ const Header = () => {
                       to="#"
                       className="meanmenu-reveal"
                       style={{ right: 0, left: "auto" }}
+                      onClick={toggleMenu}
                     >
                       <span />
                       <span />
@@ -36,12 +49,13 @@ const Header = () => {
                       </form>
                       <ul
                         className="list-unstyled navbar-nav ml-auto"
-                        style={{ display: "none" }}
+                        style={{ display: isMenuVisible ? 'block' : 'none' }}
                       >
                         <li className="position-relative menu-item">
-                          <Link  to="#" className="link menu-dropdown">
-                            Home
-                          </Link>
+                        <Link 
+                           to="#"
+                         className={`link menu-dropdown`}
+                          >Home</Link>
                           <Link 
                             className="mean-expand"
                             to="#"
@@ -325,7 +339,7 @@ const Header = () => {
                         </div>
                         <div className="option-item">
                           <Link  to="#" className="link default-btn">
-                            <i className="fas fa-user" /> Login/Register
+                          <FaRegUser className='user-icon'/> Login/Register
                             <span
                               className="effect"
                               style={{ top: "46.5px", left: "101.172px" }}
@@ -338,7 +352,7 @@ const Header = () => {
                   <div className="logo">
                     <Link  to="#">
                       <img
-                        src="https://elearning.ashoka.edu.in/static/ashokauniversity-theme/images/logo.929dadcb5be9.png"
+                        src={white_logo}
                         alt="logo"
                       />
                     </Link>
@@ -351,10 +365,10 @@ const Header = () => {
               <div className="container-fluid">
                 <nav className="navbar navbar-expand-md navbar-light">
                   <Link  to="#" className="logo-wrapper">
-                    <img
-                      src="https://elearning.ashoka.edu.in/static/ashokauniversity-theme/images/logo.929dadcb5be9.png"
-                      alt="logo"
-                    />
+                  <img
+                        src={white_logo}
+                        alt="logo"
+                      />
                   </Link>
                   <div className="collapse navbar-collapse mean-menu">
                     <form className="search-box">
@@ -372,32 +386,32 @@ const Header = () => {
                     <ul className="navbar-nav ml-auto list-unstyled">
       <li className="position-relative menu-item">
         <Link to="/" className="link menu-dropdown active">
-          Home
+          Home <IoIosArrowDown  className='manu-span' />
         </Link>
       </li>
       <li className="position-relative menu-item">
         <Link to="#" className="link menu-dropdown">
-          Pages
+          Pages <IoIosArrowDown  className='manu-span' />
         </Link>
       </li>
       <li className="position-relative menu-item">
         <Link to="/courses" className="link menu-dropdown">
-          Courses
+          Courses <IoIosArrowDown  className='manu-span' />
         </Link>
       </li>
       <li className="position-relative menu-item">
         <Link to="/events" className="link menu-dropdown">
-          Events
+          Events <IoIosArrowDown  className='manu-span' />
         </Link>
       </li>
       <li className="position-relative menu-item">
         <Link to="/shop" className="link menu-dropdown">
-          Shop
+          Shop <IoIosArrowDown  className='manu-span' />
         </Link>
       </li>
       <li className="position-relative menu-item">
-        <Link to="/blog" className="link menu-dropdown">
-          Blog
+        <Link to="#" className="link menu-dropdown">
+          Blog <IoIosArrowDown  className='manu-span' />
         </Link>
       </li>
       <li className="position-relative menu-item">
@@ -422,8 +436,8 @@ const Header = () => {
                           </div>
                         </div>
                         <div className="option-item">
-                          <Link  to="#" className="link default-btn">
-                            <i className="fas fa-user" /> Login/Register
+                          <Link  to="#" className="link default-btn d-flex">
+                          <FaRegUser className='user-icon'/> Login/Register
                             <span
                               className="effect"
                               style={{ top: "46.5px", left: "101.172px" }}
@@ -431,7 +445,7 @@ const Header = () => {
                           </Link>
                         </div>
                       </div>
-                    {/* <div className="others-option d-flex align-items-center">
+                    <div className="others-option d-flex align-items-center d-none">
                       <div className="option-item">
                         <div className="secondary">
                           <div className="mobile-nav-item hidden-mobile nav-item">
@@ -501,22 +515,22 @@ const Header = () => {
                           </div>
                         </div>
                       </div>
-                    </div> */}
+                    </div>
                   </div>
                 </nav>
               </div>
             </div>
             <div className="other-option-for-responsive">
               <div className="container">
-                <div className="dot-menu">
+                <div className="dot-menu" onClick={toggleMenu2}>
                   <div className="inner">
                     <div className="circle circle-one" />
                     <div className="circle circle-two" />
                     <div className="circle circle-three" />
                   </div>
                 </div>
-                <div className="container">
-                  <div className="option-inner">
+                <div className="container active">
+                  <div className="option-inner" style={{ display: isMenu2Visible ? 'block' : 'none' }}>
                     <form className="search-box">
                       <input
                         type="text"
@@ -546,7 +560,7 @@ const Header = () => {
                       </div>
                       <div className="option-item">
                         <Link  to="#" className="link default-btn">
-                          <i className="fas fa-user" /> Login/Register
+                          <FaRegUser className='user-icon'/> Login/Register
                           <span
                             className="effect"
                             style={{ top: "46.5px", left: "101.172px" }}

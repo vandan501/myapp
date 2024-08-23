@@ -211,6 +211,7 @@ const CourseAbout = () => {
             name="comment"
             className="cmt-text-area"
             value={commentText}
+            rows="7"
             onChange={(e) => setCommentText(e.target.value)}
             required
           />

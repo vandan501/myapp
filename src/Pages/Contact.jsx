@@ -3,7 +3,7 @@ import "../assests/css/custom.css";
 import crosImg from "../assests/image/shape8.svg"
 import { Link } from "react-router-dom";
 import { CiLocationOn } from "react-icons/ci";
-import { FaUniversity } from "react-icons/fa";
+import { TbPhoneCall } from "react-icons/tb";
 import { AiOutlineMail } from "react-icons/ai";
 
 const Contact = () => {
@@ -22,8 +22,7 @@ const Contact = () => {
             <h3>CONTACT DETAILS</h3>
             <h1>Get in Touch</h1>
             <p>
-              We are always here to help you. In case of any queries, do not
-              hesitate to reach out to us.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. sed do eiusmod tempor inciddunt ut labore at dolore manga aiqua. Quis ipsum suspendisse ultrices gravida,Risus commando viverra.
             </p>
           </div>
           <div className="our-address">
@@ -34,18 +33,8 @@ const Contact = () => {
             <div className="info">
               <h1>Our Address</h1>
               <p>
-                Ashoka University, NH 44, Rajiv Gandhi Education City, Sonipat,
-                Haryana 131029
-              </p>
-            </div>
-          </div>
-          <div className="uni">
-            <div className="icon-section">
-              <FaUniversity fill="#c4122f" className="myicon" />
-            </div>
-            <div className="info">
-              <h1>Ashoka University</h1>
-              <p>www.ashoka.edu.in</p>
+              B-810-811,Empire Business Hub,Science City Road,Ahmedabad -380060,Gujarat,India  
+                   </p>
             </div>
           </div>
           <div className="email">
@@ -56,10 +45,25 @@ const Contact = () => {
               <h1>E-mail</h1>
               <p>
                 {" "}
-                Mail:<span>systems.support@ashoka.edu.in</span>
+                Mail:<span>helo@learniphi.com</span> <br></br>
+                Gmail:<span>support@learniphi.com</span>
               </p>
             </div>
           </div>
+          <div className="email contact">
+          <div className="icon-section">
+              <TbPhoneCall id="call-icon"/>
+            </div>
+            <div className="info">
+              <h1>Contact</h1>
+              <p>
+                {" "}
+                Mobile:<span>+91-79-4849-6969</span> <br></br>
+                Phone:<span>+91-982-481-6969</span>
+              </p>
+            </div>
+          </div>
+          
         </div>
         <div className="right-side">
           <div className="contact-us-form">
@@ -93,17 +97,18 @@ const Contact = () => {
               <div className="form-group">
                 <textarea
                   className="form-control"
-                  rows="5"
                   placeholder="Write your message..."
-                ></textarea>
+                  rows="7"
+                  style={{height:'auto'}}
+                  ></textarea>
               </div>
               <div className="form-group">
                 <label>
-                  <input type="checkbox" className="gdpr-term" />
+                  <input type="checkbox" className="gdpr-term"  />
                   Accept{" "}
                   <Link to="https://learn.ashoka.edu.in/terms-conditions/">
                     terms
-                  </Link>{" "}
+                  </Link>{" "}  
                   and{" "}
                   <Link to="https://learn.ashoka.edu.in/privacy-policy/">
                     privacy policy
