@@ -394,7 +394,7 @@ input[type=submit] {
   background-color: #fff;
   position: relative;
   padding: 5px 0;
-  box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+  box-shadow: none !important;
   border: none;
 }
 

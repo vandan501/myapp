@@ -338,8 +338,8 @@ const Header = () => {
                           </div>
                         </div>
                         <div className="option-item">
-                          <Link  to="#" className="link default-btn">
-                          <FaRegUser className='user-icon'/> Login/Register
+                          <Link  to="/login" className="link default-btn">
+                          <FaRegUser className='user-icon'/> Login
                             <span
                               className="effect"
                               style={{ top: "46.5px", left: "101.172px" }}
@@ -436,8 +436,8 @@ const Header = () => {
                           </div>
                         </div>
                         <div className="option-item">
-                          <Link  to="#" className="link default-btn d-flex">
-                          <FaRegUser className='user-icon'/> Login/Register
+                          <Link  to="/login" className="link default-btn d-flex">
+                          <FaRegUser className='user-icon'/> Login
                             <span
                               className="effect"
                               style={{ top: "46.5px", left: "101.172px" }}
@@ -559,8 +559,8 @@ const Header = () => {
                         </div>
                       </div>
                       <div className="option-item">
-                        <Link  to="#" className="link default-btn">
-                          <FaRegUser className='user-icon'/> Login/Register
+                        <Link  to="/login" className="link default-btn">
+                          <FaRegUser className='user-icon'/> Login
                           <span
                             className="effect"
                             style={{ top: "46.5px", left: "101.172px" }}

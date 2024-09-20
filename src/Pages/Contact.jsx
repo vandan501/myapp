@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { CiLocationOn } from "react-icons/ci";
 import { TbPhoneCall } from "react-icons/tb";
 import { AiOutlineMail } from "react-icons/ai";
+import { BiUnderline } from "react-icons/bi";
 
 const Contact = () => {
   return (

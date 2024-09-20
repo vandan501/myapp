@@ -1,0 +1,218 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.custom-login-page{
+    width: 100%;
+}
+
+.custom-login-page .header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    height: 84px;
+    z-index: 9999;
+    padding: 25px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 28px 0 rgba(0, 0, 0, 0.09);
+    border: none;
+}
+@media (max-width:425px)
+{
+  .custom-login-page .header{
+    padding: 15px 10px;
+
+}
+.custom-login-page .header .links-wrapper{
+    margin-right: 10px;
+    align-content: center;
+}
+}
+.custom-login-page .header .logo-section{
+    height: 45px;
+    width: 130px;
+    margin-left: 30px;
+}
+.custom-login-page .header .logo-section img{
+    width: 100%;
+    height: 100%;
+}
+.custom-login-page .header .links-wrapper{
+    height: 100%;
+    width: max-content;
+    text-align: center;
+    margin-right: 30px;
+}
+.custom-login-page .header .links-wrapper p{
+    text-align: center;
+    padding: 0;
+    font-weight: 800;
+    margin: 0;
+}
+
+
+.login-page-section {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Left logo section */
+.logo-side-section {
+  background-color: #002f6c; /* Dark blue color */
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-side-section img {
+  max-width: 70%;
+}
+
+/* Right login form section */
+.login-form-section {
+  flex: 1;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff; 
+}
+
+h3 {
+  font-size: 28px;
+  color: #c4122f; 
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.google-login {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 1px solid #000;
+  width: 100%;
+  justify-content: center;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.google-login img {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.continue-text {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.login-form {
+  width: 100%;
+}
+
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 5px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.input-group input:focus{
+  color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
+}
+
+.input-group i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: #888;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.remember-me input {
+  margin-right: 10px;
+}
+
+.login-btn {
+  background-color: #c4122f;
+  color: white;
+  width: 100%;
+  padding: 6px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-btn:hover {
+  background-color: #b00116;
+}
+
+/* Media Queries for Tablets (up to 768px) */
+@media (max-width: 768px) {
+  .logo-side-section {
+    display: none;
+  }
+
+  .login-page-section {
+    justify-content: center;
+  }
+
+  .login-form-section {
+    width: 100%;
+    padding: 20px;
+    background-color: white; /* Optional: to remove background on small devices */
+  }
+
+  .login-form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .google-login,
+  .login-btn {
+    max-width: 100%;
+  }
+}
+
+/* Media Queries for Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+  h3 {
+    font-size: 24px;
+  }
+
+  .login-form-section {
+    padding: 10px;
+  }
+
+  .login-form {
+    padding: 10px;
+  }
+}
+

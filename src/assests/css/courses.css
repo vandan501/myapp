@@ -143,7 +143,7 @@
 .course-card-info {
   width: 100%;
   display: flex;
-  padding: 0 40px;
+  padding: 0 30px;
   gap: 10px;
   height: 287px;
   flex-direction: column;
@@ -184,7 +184,7 @@
   font-size: 25px;
   width: 100%;
   line-height: 1.1;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .course-card-info .course-title:hover {

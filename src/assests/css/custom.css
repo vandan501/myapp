@@ -178,6 +178,7 @@
   background-image: url("../image/register-shape.jpg");
   min-height: 60vh;
   width: 525px !important;
+  border-radius: 6px;
   height: 670px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -383,6 +384,11 @@
   font-weight: 800;
   stroke: #c4122f;
 }
+.form-group label a{
+  text-decoration:underline !important;
+}
+
+
 
 
 
@@ -685,6 +691,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border: 0.5px solid #cad0d6;
   padding: 1rem 1rem;
   width: 95%;
   background-color: #fafafa;
@@ -700,6 +707,9 @@
 .sorting-dropdown {
   padding: 0.5rem;
   border: 1px solid #ccc;
+  padding-left: 1rem;
+  width: 240px;
+  background-color: #fff;
   border-radius: 5px;
   font-size: 1rem;
 }
@@ -717,8 +727,9 @@
   height: 585px;
   position: relative;
   border: 1px solid #fafafa;
-  border-bottom: 5px solid #c4122f;
   border-radius: 5px;
+  border: 0.2px solid lightblue;
+  color: #c22b34;
   text-align: center;
 }
 
@@ -749,6 +760,7 @@
   font-size: 1.25rem;
   color: #333;
   margin: 1rem 0;
+  margin-top: 2rem;
 }
 
 .shop-card .price {
@@ -759,15 +771,18 @@
 .shop-card .original-price {
   text-decoration: line-through;
   margin: 1rem 0.5rem;
+  color: #c22b34;
 }
 
 .shop-button {
   padding: 0.75rem 1.5rem;
-  background-color: #c4122f;
-  color: #fff;
-  border: none;
+  color: #c4122f;
+  border: 0.5px solid #c4122f;
+  width: 90%;
   margin: 1rem 0;
+  background-color: #fff;
   border-radius: 5px;
+  opacity: 0.8;
   font-size: 1rem;
   cursor: pointer;
 }
@@ -818,7 +833,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1.5rem;
+  margin: 5rem 0;
 }
 
 .pagination-button {
@@ -832,8 +847,8 @@
 }
 
 .pagination-button.active {
-  background-color: #ff5a5a;
-  color: #fff;
+  background-color: #ff5a5a !important;
+  color: #fff !important;
 }
 
 .pagination-button:hover {
